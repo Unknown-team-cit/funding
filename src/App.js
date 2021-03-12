@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import { Grid } from '@material-ui/core';
 import './App.css';
+import Cards from './components/Card';
+import Register from './components/Register.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Grid direction='row'  container justify='center'>
+
+      {/* <Cards heading='naveen' body='this body will have all the required contents' /> */}
+      <Register/>
+      </Grid>
     </div>
   );
 }
