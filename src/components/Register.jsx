@@ -40,7 +40,7 @@ function Register() {
                 <TextField name='SlideLink' onChange={onchangec} className={classes.textField} label='Google Slide Link'  color="secondary"  fullWidth/>
                 <TextField name='InvestorContent' onChange={onchangec} className={classes.textField} label='Would you like to say something to your investors'  color="secondary"  fullWidth multiline rows={3}/><br/>
                 <TextField name='Domain' onChange={onchangec} className={classes.textField} label='Domain'  color="secondary"  fullWidth required/>
-                <Button  className={classes.button} onChange={onchangec} color='secondary' type='submit' variant='contained'>Submit</Button>
+                <Button  className={classes.button} color='secondary' type='submit' variant='contained'>Submit</Button>
             </form>
 
         
