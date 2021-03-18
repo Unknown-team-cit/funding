@@ -7,7 +7,7 @@ export default makeStyles((theme)=>({
  
     },
     body:{
-        backgroundColor:'#212121',
+        // backgroundColor:'#212121',
         color:'#ed4b82'
         
     },
@@ -18,7 +18,7 @@ export default makeStyles((theme)=>({
         width: '500px',
         padding: '70px',
         border: '30px',
-        backgroundColor:'#455a64',
+        backgroundColor:'#212121',
         borderRadius:50,
         margin:30,
         
@@ -32,7 +32,7 @@ export default makeStyles((theme)=>({
         borderRadius:20,
     },
     header:{
-        color:'#212121',
+        color:'#ff1744',
         fontWeight:'bold',
         margin:'7px',
         marginLeft:'10px'

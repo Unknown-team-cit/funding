@@ -3,6 +3,7 @@ import './App.css';
 import Cards from './components/Card';
 import Contact from './components/Contact';
 import Dashboard from './components/Dashboard/Dashboard';
+import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import Register from './components/Register.jsx';
 
@@ -12,11 +13,13 @@ function App() {
 
   return (
     <div>
+      <Navbar />
       <Grid direction='row'  container justify='center'>
-      {/* <Dashboard details={details}  /> */}
-      {/* <Cards heading='naveen' body='this body will have all the required contents' /> */}
-      {/* <Register/> */}
-      <Contact/>
+      {/* <Dashboard details={details}  />
+      <Cards heading='naveen' body='this body will have all the required contents' />
+     
+      <Register/>
+      <Contact/> */}
       <Profile/>
       </Grid>
     </div>

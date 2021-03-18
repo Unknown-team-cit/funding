@@ -6,7 +6,7 @@ export default makeStyles((theme)=>({
        backgroundColor:'#212121',
        color:'#9e9e9e',
        margin:10,
-       padding:10
+       padding:10,
 
    },
    heading:{

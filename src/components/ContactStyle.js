@@ -3,11 +3,12 @@ import { makeStyles } from "@material-ui/core";
 export default makeStyles((theme)=>({
 
    paper:{
-       backgroundColor:'#455a64',
+       backgroundColor:'#212121',
        width:'60%',
        margin:'30px',
        borderRadius:20,
-       padding:'30px'
+       padding:'30px',
+       
        
        
    },
@@ -30,14 +31,16 @@ export default makeStyles((theme)=>({
 
    },
    heading:{
-       color:'#212121',
+    color:'#ff1744',
         fontWeight:'bold',
         margin:'7px',
-       marginLeft:35
+       marginLeft:'45px',
+       
 
    },
    body:{
-       backgroundColor:' #212121'
+    //    backgroundColor:' #212121'
+    
    }
    
 }))
