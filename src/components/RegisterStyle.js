@@ -4,16 +4,7 @@ export default makeStyles((theme)=>({
     textField:{
         margin:'5px',
         padding:'5px',
-        
-        // '& label.Mui-focused': {
-        //     color: 'red',
-        //   },
-        //   '& .MuiOutlinedInput-root': {
-        //     '& fieldset': {
-        //       borderColor: 'red',
-        //     },
-        // },
-        
+ 
     },
     body:{
         backgroundColor:'#212121',
@@ -27,7 +18,7 @@ export default makeStyles((theme)=>({
         width: '500px',
         padding: '70px',
         border: '30px',
-        backgroundColor:'#cfd8dc',
+        backgroundColor:'#455a64',
         borderRadius:50,
         margin:30,
         
@@ -37,14 +28,15 @@ export default makeStyles((theme)=>({
         width:'100%',
         padding:'10px',
         margin:'10px',
-        backgroundColor:'#311b92',
+        // backgroundColor:'#311b92',
         borderRadius:20,
     },
     header:{
-        color:'#311b92',
+        color:'#212121',
         fontWeight:'bold',
         margin:'7px',
         marginLeft:'10px'
 
     }
 }))
+
