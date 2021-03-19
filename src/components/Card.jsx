@@ -18,10 +18,10 @@ function Cards({heading, body}) {
                 </CardContent>
             </CardActionArea>
                 <CardActions>
-                    <Button size='small' color='secondary' >
+                    <Button href='/profile/:id' size='small' color='secondary' >
                         Know More
                     </Button>
-                    <Button  size='small' color='secondary'>
+                    <Button href='/contact/:id'  size='small' color='secondary'>
                         Contact
                     </Button>
                 </CardActions>

@@ -27,6 +27,7 @@ function Contact() {
                 <TextField onChange={onChange} name='InvestorContact' className={classes.input} label='Contact Number'  color="secondary"  fullWidth required variant='outlined' />
                 <TextField onChange={onChange} name='Message' className={classes.input} label='Your Message'  color="secondary" multiline rows={4}  fullWidth require variant='outlined' required />
                 <Button type='submit' color='secondary' variant='contained' className={classes.button}>Send</Button>
+                <Button href='/home' color='secondary' variant='outlined' className={classes.button}>Cancel</Button>
             </form>
                 
     

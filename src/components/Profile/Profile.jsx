@@ -40,7 +40,7 @@ function Profile() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                    <Button className={classes.button}  size='small' color='secondary' variant='contained'>
+                    <Button href='/contact/:id' className={classes.button}  size='small' color='secondary' variant='contained'>
                         Send a Message
                     </Button>
             </CardActions> 

@@ -33,7 +33,7 @@ function Dashboard({details}) {
                 <TextField defaultValue={details.InvestorContent} name='InvestorContent' onChange={onchangec} className={classes.textField} label='Would you like to say something to your investors' variant='filled'  color="secondary"  fullWidth multiline rows={3}/><br/>
                 <TextField defaultValue={details.Domain} name='Domain' onChange={onchangec} className={classes.textField} label='Domain'  color="secondary"  fullWidth variant='filled' multiline />
                 <Button  className={classes.Cbutton} color='primary' type='submit' variant='contained'>Change</Button>
-                <Button  className={classes.button} color='secondary'  variant='contained'>Cancel</Button>
+                <Button href='/home' className={classes.button} color='secondary'  variant='contained'>Cancel</Button>
             </form>
 
         
