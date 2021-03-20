@@ -1,10 +1,15 @@
 import React,{useState} from 'react'
 import { Button, Grid, Typography,TextField, } from '@material-ui/core'
 import makeStyles from './ContactStyle'
+import axios from 'axios'
 
 
 function Contact() {
-    const [messages, setMessages] = useState({})
+    const [messages, setMessages] = useState([])
+    const id=window.location.pathname.slice(9)
+    // console.log(id);
+
+    
     const onChange=(e)=>{
         setMessages({...messages,[e.target.name]:e.target.value})
     }
@@ -12,6 +17,13 @@ function Contact() {
     const onSubmit=(e)=>{
         e.preventDefault();
         console.log(messages);
+
+        axios.post(`http://localhost:8000/message/${id}`,messages)
+            .then((res)=>{
+                console.log(res.data);
+                alert('Message Sent');
+                window.location='/home'
+            })
     }
 
 

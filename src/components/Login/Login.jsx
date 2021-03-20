@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Grid, Typography, TextField } from "@material-ui/core";
 import makeStyles from "./LoginStyle";
+import axios from "axios";
 
 function Login() {
   const classes = makeStyles();
@@ -12,8 +13,13 @@ function Login() {
 
   const onSubmit = (e) => {
       e.preventDefault();
-      console.log(FormDetails);
-    //login stuff goes here
+      // console.log(FormDetails);
+      axios.post('http://localhost:8000/login',FormDetails)
+        .then((res)=>{
+          console.log(res.data);
+          // window.location='/dashboard/:id'
+        })
+    
   };
 
   return (

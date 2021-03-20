@@ -19,14 +19,13 @@ function Profile() {
 
     useEffect(() => {
         getCompany();
-        
-    }, []);
+      }, []);
     // console.log(id);
 
     
     const classes=makeStyles();
 
-    if (!Company) return 'Loading ...'
+    if (!Company) return <img src="https://images.app.goo.gl/sMGrTdMz34H51PSj9" alt="LOADING ..."/>
 
     return (
         <Card className={classes.card} elevation={3} >
@@ -36,28 +35,28 @@ function Profile() {
                 <Avatar className={classes.avatar}>{Company.CompanyName.slice(0,1).toUpperCase()}</Avatar>
                 <Grid container justify='center' alignItems='center' direction='column' >
                     <Typography  variant='h4'>{Company.CompanyName.toUpperCase()}</Typography>
-                    <Typography variant='h6' gutterBottom>CEO : {Company.NameofCeo.toUpperCase()}</Typography>
+                    <Typography variant='h6' gutterBottom>CEO: {Company.NameofCeo.toUpperCase()}</Typography>
                 </Grid>
                     <Typography className={classes.subheading} variant='h6'><u>Our Area Of Work :</u></Typography>
-                    <Typography className={classes.contents} variant='body2'>{Company.FeildOfWork}</Typography>
+                    <Typography className={classes.contents} variant='body1'>{Company.FeildOfWork}</Typography>
 
                     <Typography className={classes.subheading} variant='h6'><u>Our Company is Based in :</u></Typography>
-                    <Typography className={classes.contents} variant='body2'>{`${Company.Country},${Company.State},${Company.City}`}</Typography>
+                    <Typography className={classes.contents} variant='body1'>{`${Company.Country},${Company.State},${Company.City}`}</Typography>
 
                     <Typography className={classes.subheading} variant='h6'><u>We Like to say That:</u></Typography>
-                    <Typography className={classes.contents} variant='body2'>{Company.InvestorContent}</Typography>
+                    <Typography className={classes.contents} variant='body1'>{Company.InvestorContent}</Typography>
 
                     <Typography className={classes.subheading} variant='h6'><u>Our Domain:</u></Typography>
-                    <Typography className={classes.contents} variant='body2'>{Company.Domain}</Typography>
+                    <Typography className={classes.contents} variant='body1'>{Company.Domain}</Typography>
 
                     <Typography className={classes.subheading} variant='h6'><u>Our Links :</u></Typography>
-                    <Typography className={classes.contents} variant='body2'>{Company.Linkedin}</Typography>
-                    <Typography className={classes.contents} variant='body2'>{Company.CompanyWebsite}</Typography>
-                    <Typography className={classes.contents} variant='body2'>{Company.SlideLink}</Typography>
+                    <Typography className={classes.contents} variant='body1'>{Company.Linkedin}</Typography>
+                    <Typography className={classes.contents} variant='body1'>{Company.CompanyWebsite}</Typography>
+                    <Typography className={classes.contents} variant='body1'>{Company.SlideLink}</Typography>
 
                     <Typography className={classes.subheading} variant='h6'><u>Like Our Profile Lets get in Touch:</u></Typography>
-                    <Typography className={classes.contents} variant='body2'>{Company.Contact}</Typography>
-                    <Typography className={classes.contents} variant='body2'>{Company.Email}</Typography>
+                    <Typography className={classes.contents} variant='body1'>{Company.Contact}</Typography>
+                    <Typography className={classes.contents} variant='body1'>{Company.Email}</Typography>
 
                 </CardContent>
             </CardActionArea>
