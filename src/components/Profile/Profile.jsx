@@ -13,10 +13,10 @@ function Profile() {
         await axios.get(`http://localhost:8000/getStartupId/${id}`)
             .then((res)=>{
                 setCompany(res.data)
-                console.log(res.data);
+                // console.log(res.data);
             
             })
-            .catch(console.log('unable to load data'))
+            // .catch(console.log('unable to load data'))
     }
 
     useEffect(() => {
@@ -52,9 +52,9 @@ function Profile() {
                     <Typography className={classes.contents} variant='body1'>{Company.Domain}</Typography>
 
                     <Typography className={classes.subheading} variant='h6'><u>Our Links :</u></Typography>
-                    <Typography className={classes.contents} variant='body1'>{Company.Linkedin}</Typography>
-                    <Typography className={classes.contents} variant='body1'>{Company.CompanyWebsite}</Typography>
-                    <Typography className={classes.contents} variant='body1'>{Company.SlideLink}</Typography>
+                    <a><Typography className={classes.contents} variant='body1'>{Company.Linkedin}</Typography></a>
+                    <a><Typography className={classes.contents} variant='body1'>{Company.CompanyWebsite}</Typography></a>
+                    <a><Typography className={classes.contents} variant='body1'>{Company.SlideLink}</Typography></a>
 
                     <Typography className={classes.subheading} variant='h6'><u>Like Our Profile Lets get in Touch:</u></Typography>
                     <Typography className={classes.contents} variant='body1'>{Company.Contact}</Typography>

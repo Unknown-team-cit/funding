@@ -11,6 +11,7 @@ import Login from './components/Login/Login';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Message from './components/Messages';
+import SimpleSlider from './components/Slider';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
     await axios.get("http://localhost:8000/getStartup").then((res) => {
       var startUpRes = res.data;
       setstartUp(startUpRes);
-      console.log("st", startUpRes);
+      // console.log("st", startUpRes);
     });
   };
 
@@ -36,6 +37,7 @@ function App() {
       <Navbar />
       <Grid direction='row'  container justify='center'>
         <Route exact path='/home' >
+          <SimpleSlider/>
         {startUp.map((data, index) => (
               <Cards id={data._id} key={data._id} heading={data.CompanyName} body={data.InvestorContent} />
             ))}

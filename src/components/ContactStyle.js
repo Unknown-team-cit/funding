@@ -15,7 +15,9 @@ export default makeStyles((theme)=>({
    input:{
        width:'75%',
        margin:20,
-       marginLeft:35
+       marginLeft:35,
+       backgroundColor:'#455a64',
+        borderRadius:5
 
        
    },

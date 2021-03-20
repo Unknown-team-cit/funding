@@ -18,7 +18,7 @@ function Register() {
         e.preventDefault();
         // console.log(FormDetails);
         axios.post("http://localhost:8000/addstartup",FormDetails)
-            .then(window.location='./home');
+            .then(window.location='/home');
 
         
     }
@@ -31,6 +31,7 @@ function Register() {
             <Typography className={classes.header} variant='h5' gutterBottom>Register your company Here</Typography>
                 
                 <TextField name='CompanyName' onChange={onchangec} className={classes.textField} label='Company Name'  color="secondary"  fullWidth required /> 
+                <TextField name='CompanyRegNumber' onChange={onchangec} className={classes.textField} label='Company RegNo'  color="secondary"  fullWidth required /> 
                 <TextField name='Password' onChange={onchangec} className={classes.textField} label='Password'  color="secondary" type='password' fullWidth required/> 
                 <TextField name='NameofCeo' onChange={onchangec} className={classes.textField} label='Name of CEO'  color="secondary"  fullWidth required/>
                 <TextField name='FeildOfWork' onChange={onchangec} className={classes.textField} label='Field of work'  color="secondary"  fullWidth required multiline rows={3}/>

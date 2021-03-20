@@ -13,7 +13,7 @@ function Dashboard() {
         await axios.get(`http://localhost:8000/getStartupId/${id}`)
             .then((res)=>{
                 setCompany(res.data)
-                console.log(res.data);
+                // console.log(res.data);
             
             })
             // .catch(console.log('unable to load data'))
@@ -33,13 +33,14 @@ function Dashboard() {
     
     const onSubmit=(e)=>{
         e.preventDefault();
-        console.log(FormDetails);
+        // console.log(FormDetails);
 
         axios.put(`http://localhost:8000/updateStartup/${id}`,FormDetails)
             .then((res)=>{
-                console.log(res.data);
+                // console.log(res.data);
                 alert('Update Successful')
             })
+
         
     }
 

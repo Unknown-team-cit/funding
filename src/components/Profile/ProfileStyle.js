@@ -30,6 +30,7 @@ export default makeStyles((theme)=>({
  },
  button:{
      width:'100%',
+     
      borderRadius:30,
      margin:10,
      padding:10,

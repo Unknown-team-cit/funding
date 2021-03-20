@@ -40,6 +40,7 @@ function Navbar(props) {
             
             />
             </Link>
+            
           <Typography variant="h6" className={classes.title}></Typography>
           {!props.reg && (
             <Button href='/register' className={classes.button} color="inherit">

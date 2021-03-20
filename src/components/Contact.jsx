@@ -20,10 +20,11 @@ function Contact() {
 
         axios.post(`http://localhost:8000/message/${id}`,messages)
             .then((res)=>{
-                console.log(res.data);
+                // console.log(res.data);
                 alert('Message Sent');
                 window.location='/home'
             })
+
     }
 
 
