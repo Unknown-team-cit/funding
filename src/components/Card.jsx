@@ -21,7 +21,7 @@ function Cards({heading, body,id}) {
                     <Button href={`/profile/${id}`} size='small' color='secondary' >
                         Know More
                     </Button>
-                    <Button href='/contact/:id'  size='small' color='secondary'>
+                    <Button href={`/contact/${id}`}  size='small' color='secondary'>
                         Contact
                     </Button>
                 </CardActions>
