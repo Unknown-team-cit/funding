@@ -16,9 +16,17 @@ function Login() {
       // console.log(FormDetails);
       axios.post('http://localhost:8000/login',FormDetails)
         .then((res)=>{
-          console.log(res.data);
-          // window.location='/dashboard/:id'
+          console.log(res.data)
+          if(res.data){
+
+            const id= res.data._id;
+            window.location=`/dashboard/${id}`
+          }
+          else{
+            alert('Wrong Email or Password')
+          }
         })
+      
     
   };
 
