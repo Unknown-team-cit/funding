@@ -4,6 +4,8 @@ export default makeStyles((theme)=>({
     textField:{
         margin:'5px',
         padding:'5px',
+        backgroundColor:'white',
+        borderRadius:20
  
     },
     body:{

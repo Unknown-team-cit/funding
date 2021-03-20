@@ -10,6 +10,7 @@ import {BrowserRouter as Router,Route} from 'react-router-dom';
 import Login from './components/Login/Login';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import Message from './components/Messages';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
               <Cards id={data._id} key={data._id} heading={data.CompanyName} body={data.InvestorContent} />
             ))}
         </Route>
+        <Route exact path='/messages/:id' ><Message/></Route>
         <Route exact path='/register' ><Register/></Route>
         <Route exact path='/login'><Login/></Route>
         <Route exact path='/contact/:id' ><Contact/></Route>

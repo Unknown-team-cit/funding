@@ -2,6 +2,8 @@ import { Avatar, Card, CardActionArea, CardContent, Button,CardActions,Grid, Typ
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import makeStyles from './ProfileStyle';
+import { CircularProgress } from '@material-ui/core';
+
 
 
 function Profile() {
@@ -25,7 +27,7 @@ function Profile() {
     
     const classes=makeStyles();
 
-    if (!Company) return <img src="https://images.app.goo.gl/sMGrTdMz34H51PSj9" alt="LOADING ..."/>
+    if (!Company) return <CircularProgress/>
 
     return (
         <Card className={classes.card} elevation={3} >
