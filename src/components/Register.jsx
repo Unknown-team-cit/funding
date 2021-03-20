@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import { Button, Grid, Typography,TextField } from "@material-ui/core";
 import makeStyles from './RegisterStyle'
+import axios from 'axios';
 
 
 function Register() {
@@ -15,7 +16,10 @@ function Register() {
     
     const onSubmit=(e)=>{
         e.preventDefault();
-        console.log(FormDetails);
+        // console.log(FormDetails);
+        axios.post("http://localhost:8000/addstartup",FormDetails)
+            .then(window.location='./home');
+
         
     }
 

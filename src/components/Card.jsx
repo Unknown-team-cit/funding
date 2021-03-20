@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Card, CardActionArea, CardActions, CardContent, Typography } from "@material-ui/core";
 import makeStyles from './CardStyle'
 
-function Cards({heading, body}) {
+function Cards({heading, body,id}) {
     const classes = makeStyles();
 
     return (
@@ -18,7 +18,7 @@ function Cards({heading, body}) {
                 </CardContent>
             </CardActionArea>
                 <CardActions>
-                    <Button href='/profile/:id' size='small' color='secondary' >
+                    <Button href={`/profile/${id}`} size='small' color='secondary' >
                         Know More
                     </Button>
                     <Button href='/contact/:id'  size='small' color='secondary'>
